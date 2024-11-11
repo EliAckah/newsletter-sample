@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --bg-color: #F9FAFB;
+    --grey-color: #6C727F;
+    --lgrey-color: #E5E7EB;
+    --dgrey-color: #394150;
+    --blue-color: #284BCE
+}
+
+body {
+    font-family: 'Poppins',arial;
+    font-size: 16px;
+    background: var(--bg-color);
+    line-height: 1.5;
+    overflow-x: hidden;
+}
+
+.major-content {
+    max-width: 750px;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.major-content .header-heading {
+    margin: 20px 0 20px 0;
+}
+
+.major-content .content-body {
+    color: var(--grey-color);
+    margin-bottom: 40px;
+}
+
+.card input[type='email'] {
+    width: 100%;
+    font-family: 'Poppins',arial;
+    font-size: 1rem;
+    text-align: center;
+    z-index: 3;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: var(--lgrey-color);
+    border: 2px solid transparent;
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+}
+
+.card input[type='email']::placeholder {
+    color: var(--dgrey-color);
+    font-family: 'Poppins', arial;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+
+
+input[type='email']:focus{
+    outline: none;
+    background-image: linear-gradient(white, white), 
+                      linear-gradient(45deg, rgb(0, 64, 255), rgb(0, 229, 255), rgb(0, 0, 106));
+}
+
+
+/* Utility Classes */
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.card {
+    background: #ffffff;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    max-width: 500px;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+/* Button Classes */
+.btn-sub {
+    color: #ffffff;
+    font-family: 'Poppins', arial;
+    font-weight: 600;
+    font-size: 1rem;
+    background: var(--blue-color);
+    border:none;
+    margin: 20px 0 20px 0;
+    padding: 15px 0 15px 0;
+    border-radius: 10px;
+    width: 100%;
+    cursor: pointer;
+}
+
+
+/* Text Classes */
+.text-xxl {
+    font-size: 3rem;
+    line-height: 1.2;
+    font-weight: 600;
+}
+
+.text-l {
+    font-size: 1.25rem;
+    line-height: 1.6;
+    font-weight: 400;
+}
+
+.text-placeh {
+    font-size: 1rem;
+    line-height: normal;
+    font-weight: 500;
+}
+
+.text-button-text {
+    font-size: 1rem;
+    line-height: normal;
+    font-weight: 600;
+}
+
+.text-helper-text {
+    font-size: 0.875rem;
+    line-height: normal;
+    font-weight: 400;
+    color: var(--dgrey-color);
+}
+
+.text-center {
+    text-align: center;
+}
